@@ -101,6 +101,31 @@ const jogo_029 = item('jogo_029', ["THE LEGEND OF ZELDA OCARINA OF TIME", "OCARI
 // contador
 var contador = 0
 
+// funcoes
+function getBigrams(str) {
+  const bigrams = new Set();
+  for (let i = 0; i < str.length - 1; i += 1) {
+    bigrams.add(str.substring(i, i + 2));
+  }
+  return bigrams;
+}
+
+function intersect(set1, set2) {
+  return new Set([...set1].filter((x) => set2.has(x)));
+}
+
+function diceCoefficient(str1, str2) {
+  /* Returns a number between 0 and 1, where 1 means the strings are identical
+  and 0 means they have no bigrams in common.
+  More info: https://en.wikipedia.org/wiki/Sørensen–Dice_coefficient
+  Example:
+  diceCoefficient('night', 'nacht') // 0.25
+  */
+  const bigrams1 = getBigrams(str1.toLowerCase());
+  const bigrams2 = getBigrams(str2.toLowerCase());
+  return (2 * intersect(bigrams1, bigrams2).size) / (bigrams1.size + bigrams2.size);
+}
+
 // resposta
 function resposta(resposta, id, img, arte, nome) {    
   let text;
