@@ -1,5 +1,5 @@
 $(function () {
-    var item = [desenho_001, desenho_002, desenho_003, desenho_004, desenho_005, desenho_006, desenho_007, desenho_008, desenho_009, desenho_010, desenho_011, desenho_012, desenho_013, desenho_014, desenho_015, desenho_016];
+    var item = [desenho_001, desenho_002, desenho_003, desenho_004, desenho_005, desenho_006, desenho_007, desenho_008, desenho_009, desenho_010, desenho_011, desenho_012, desenho_013, desenho_014, desenho_015, desenho_016, desenho_017, desenho_018, desenho_019, desenho_020, desenho_021];
    
   $.each(item, function (index, element) {
     var Container = "<div class='box'><img src='imagens/desconhecido.png' id='"+element.a+"_img'>"+
@@ -9,6 +9,8 @@ $(function () {
 
       $("modulo").append(Container);
     });
+
   });
 
-const score = ' de 16'
+const score = ' de 21';
+console.log(score);

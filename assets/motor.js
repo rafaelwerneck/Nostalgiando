@@ -26,6 +26,11 @@ const desenho_013 = item('desenho_013', ["JOHNNY BRAVO", "JONNY BRAVO"], 'Johnny
 const desenho_014 = item('desenho_014', ["CAPTAIN PLANET AND THE PLANETEERS", "CAPTAIN PLANET", "CAPITÃO PLANETA", "CAPITAO PLANETA"], 'Capitão Planeta', 'imagens/capitaoplaneta.png');
 const desenho_015 = item('desenho_015', ["O LABORATÓRIO DE DEXTER", "LABORATÓRIO DE DEXTER", "O LABORATÓRIO DO DEXTER", "LABORATÓRIO DO DEXTER", "DEXTER", "DEXTER'S LABORATORY", "O LABORATORIO DE DEXTER", "LABORATORIO DE DEXTER"], 'O Laboratório de Dexter', 'imagens/dexter.png');
 const desenho_016 = item('desenho_016', ["TOM E JERRY", "TOM AND JERRY", "TOM JERRY", "TOM AND JERRY"], 'Tom e Jerry', 'imagens/tomejerry.png');
+const desenho_017 = item('desenho_017', ["THUNDERCATS"], 'Thundercats', 'imagens/thundercats.jpg');
+const desenho_018 = item('desenho_018', ["MANDA CHUVA", "MANDACHUVA", "MANDA-CHUVA"], 'Manda-Chuva', 'imagens/mandachuva.jpeg');
+const desenho_019 = item('desenho_019', ["DARK WING DUCK", "DARKWINGDUCK", "DARKWING DUCK"], 'DarkWing Duck', 'imagens/darkwingduck.jpeg');
+const desenho_020 = item('desenho_020', ["SUPERPATOS", "SUPER PATOS"], 'Super Patos', 'imagens/superpatos.jpeg');
+const desenho_021 = item('desenho_021', ["TRIGEMEAS", "AS TRIGEMEAS"], 'As Trigemeas', 'imagens/as_trigemeas.jpg');
 
 // tokusatsus
 const tokusatsu_001 = item('tokusatsu_001', ["JIBAN", "POLICIAL DE AÇO JIBAN", "POLICIAL DE ACO JIBAN"], 'Policial de Aço Jiban', 'imagens/jiban.png');
@@ -130,10 +135,13 @@ function diceCoefficient(str1, str2) {
 function resposta(resposta, id, img, arte, nome) {    
   let text;
   let x = document.getElementById(id).value.toUpperCase();
-  if (
+  const map1 = resposta.map((y) => diceCoefficient(x, y));
+  let coef = Math.max(...map1);
+  /*if (
     x == resposta[0] || x == resposta[1] || x == resposta[2] || x == resposta[3] || x == resposta[4] ||
     x == resposta[5] || x == resposta[6] || x == resposta[7] || x == resposta[8] || x == resposta[9]
-    ) {
+    ) {*/
+  if (coef >= 0.85) {  
     document.getElementById(id).style.color = '#66ff66'; 
     document.getElementById(id).disabled = true; 
     document.getElementById(id).value = nome;    
