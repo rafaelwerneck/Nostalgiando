@@ -1,6 +1,9 @@
+var score; // Variável global para armazenar o score
+
 $(function () {
-    var item = [jogo_001, jogo_002, jogo_003, jogo_004, jogo_005, jogo_006, jogo_007, jogo_008, jogo_009, jogo_010, jogo_011, jogo_012, jogo_013, jogo_014, jogo_015,
-      jogo_016, jogo_017, jogo_018, jogo_019, jogo_020, jogo_021, jogo_022, jogo_023, jogo_024, jogo_025, jogo_026, jogo_027, jogo_028, jogo_029];
+  var item = [jogo_001, jogo_002, jogo_003, jogo_004, jogo_005, jogo_006, jogo_007, jogo_008, jogo_009, jogo_010, jogo_011, jogo_012, jogo_013, jogo_014, jogo_015, jogo_016, jogo_017, jogo_018, jogo_019, jogo_020, jogo_021, jogo_022, jogo_023, jogo_024, jogo_025, jogo_026, jogo_027, jogo_028, jogo_029];
+
+  score = ` de ${item.length}`; // Atualiza o score com o tamanho do array item
    
   $.each(item, function (index, element) {
     var Container = "<div class='box'><img src='imagens/desconhecido.png' id='"+element.a+"_img'>"+
@@ -10,6 +13,4 @@ $(function () {
 
       $("modulo").append(Container);
     });
-  }); 
-
-const score = ' de 22'
+  });

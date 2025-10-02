@@ -67,6 +67,8 @@ const anime_013 = item('anime_013', ["OS CAVALEIROS DO ZODÍACO", "OS CAVALEIROS
 const anime_014 = item('anime_014', ["GUERREIRAS MÁGICAS DE RAYEARTH", "GUERREIRAS MAGICAS DE RAYEARTH", "GUERREIRAS DE RAYEARTH"], 'Guerreiras Mágicas de Rayearth', 'imagens/rayearth.png');
 const anime_015 = item('anime_015', ["SAILOR MOON"], 'Sailor Moon', 'imagens/sailormoon.png');
 const anime_016 = item('anime_016', ["SAMURAI X", "RUROUNI KENSHIN"], 'Samurai X/Rurouni Kenshin', 'imagens/samuraix.png');
+const anime_017 = item('anime_017', ["POPOLOCROIS"], 'Popolocrois', 'imagens/popolocrois.png');
+const anime_018 = item('anime_018', ["BUCKY"], 'Bucky', 'imagens/bucky.jpeg');
 
 // jogo
 const jogo_001 = item('jogo_001', ["VALIS 2", "VALIS II"], 'Valis II (PC Engine)', 'imagens/valisii.png');
@@ -153,4 +155,4 @@ function resposta(resposta, id, img, arte, nome) {
       
     }
     document.getElementById("placar").innerHTML = 'Placar: ' + contador + score
-  } 
+  }
