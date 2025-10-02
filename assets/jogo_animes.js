@@ -9,7 +9,7 @@ $(function () {
     var Container = "<div class='box'><img src='imagens/desconhecido.png' id='"+element.a+"_img'>"+
       "<input id='"+element.a+"_input' class='input' placeholder='Qual é o anime?' onkeyup='resposta("+element.a+".resposta, "+element.a+".input, "+element.a+".img, "+element.a+".arte, "+element.a+".nome)'>"+
       "<div class='float_l'><button class='btn btn-dark play' value='audios/"+element.a+".mp3'>Tocar</button></div><div class='px10'></div><div class='float_r'>"+
-      "<button class='btn btn-dark stop' onclick='javascript:stopAllAudio()'>Parar</button></div></div>"
+      "<button class='btn btn-dark stop'>Parar</button></div></div>"
 
       $("modulo").append(Container);
     });
