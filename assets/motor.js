@@ -30,7 +30,7 @@ const desenho_017 = item('desenho_017', ["THUNDERCATS"], 'Thundercats', 'imagens
 const desenho_018 = item('desenho_018', ["MANDA CHUVA", "MANDACHUVA", "MANDA-CHUVA"], 'Manda-Chuva', 'imagens/mandachuva.jpeg');
 const desenho_019 = item('desenho_019', ["DARK WING DUCK", "DARKWINGDUCK", "DARKWING DUCK"], 'DarkWing Duck', 'imagens/darkwingduck.jpeg');
 const desenho_020 = item('desenho_020', ["SUPERPATOS", "SUPER PATOS"], 'Super Patos', 'imagens/superpatos.jpeg');
-const desenho_021 = item('desenho_021', ["TRIGEMEAS", "AS TRIGEMEAS"], 'As Trigemeas', 'imagens/as_trigemeas.jpg');
+const desenho_021 = item('desenho_021', ["TRIGEMEAS", "AS TRIGEMEAS", "TRIGÊMEAS", "AS TRIGÊMEAS"], 'As Trigêmeas', 'imagens/as_trigemeas.jpg');
 
 // tokusatsus
 const tokusatsu_001 = item('tokusatsu_001', ["JIBAN", "POLICIAL DE AÇO JIBAN", "POLICIAL DE ACO JIBAN"], 'Policial de Aço Jiban', 'imagens/jiban.png');
